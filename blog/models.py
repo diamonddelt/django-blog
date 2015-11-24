@@ -29,7 +29,7 @@ class Post(models.Model):
     # Publish method which updates the pushlished_date var with the current
     # DateTime value and saves the Post object
     def publish(self):
-        self.pushlished_date = timezone.now()
+        self.published_date = timezone.now()
         self.save()
 
     # 'Dunder' method - aka 'Double-Underscore'
